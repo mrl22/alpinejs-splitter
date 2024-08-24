@@ -1,8 +1,10 @@
 <x-app-layout>
 
     <div class="p-10">
-        <h1 class="text-2xl font-semibold mb-4">TailwindCSS/AlpineJS Laravel Splitter Component</h1>
+        <h1 class="text-3xl font-bold">TailwindCSS/AlpineJS Laravel Splitter Component</h1>
 
+
+        <h1 class="text-2xl font-semibold mt-10 mb-4">Examples</h1>
         <p><a class="underline text-blue-700" href="{{ route('split-v') }}">Split Vertical</a> - <a target="_blank" class="underline text-gray-500" href="https://github.com/mrl22/alpinejs-splitter/blob/main/resources/views/split-v.blade.php">/resources/views/split-v.blade.php</a></p>
         <p><a class="underline text-blue-700" href="{{ route('split-h') }}">Split Horizontal</a> - <a target="_blank" class="underline text-gray-500" href="https://github.com/mrl22/alpinejs-splitter/blob/main/resources/views/split-h.blade.php">/resources/views/split-h.blade.php</a></p>
         <p><a class="underline text-blue-700" href="{{ route('nested') }}">Nested</a> - <a target="_blank" class="underline text-gray-500" href="https://github.com/mrl22/alpinejs-splitter/blob/main/resources/views/nested.blade.php">/resources/views/nested.blade.php</a></p>
