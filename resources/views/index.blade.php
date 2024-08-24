@@ -25,7 +25,7 @@
                 <li>When dragging, the mousedown event sometimes triggers the sidebar action and slides the content.</li>
             </ul>
 
-            <p>If you see any other issues, please share or try to fix them.</p>
+            <p class="mt-10">If you see any other issues, please share or try to fix them.</p>
         </div>
     </div>
 
