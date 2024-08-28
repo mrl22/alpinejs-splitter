@@ -38,12 +38,16 @@
                     this.width1 = this.containerWidth - this.min;
                     this.width2 = this.containerWidth - this.width1;
                 }
+            },
+            selectStart(e) {
+                e.preventDefault();
             }
         }"
      x-resize="resize()"
      x-init="resize()"
      x-on:mousemove="onDrag"
      x-on:mouseup="stopDrag"
+     x-on:selectstart="selectStart"
 >
 
     <div x-ref="first" class="overflow-auto flex flex-col" :style="'width: ' + width1 + 'px'">
@@ -55,7 +59,6 @@
             <div class="h-full border-x border-gray-200 w-1"></div>
         </div>
     </div>
-
     <div x-ref="second" class="overflow-auto flex flex-col" :style="'width: ' + width2 + 'px'">
         {{ $second }}
     </div>

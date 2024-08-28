@@ -31,7 +31,6 @@
 
                 if (this.containerHeight === 0 || this.containerHeight != this.$el.clientHeight) {
                     // Onload
-                    console.log(this.$el.clientHeight)
                     this.height1 = this.$el.clientHeight / 2; // Default height when loaded
                     this.height2 = this.$el.clientHeight - this.height1 - this.$refs.handle.clientHeight;
                 }
@@ -40,12 +39,16 @@
                     this.height1 = this.containerHeight - this.min;
                     this.height2 = this.containerHeight - this.height1;
                 }
+            },
+            selectStart(e) {
+                e.preventDefault();
             }
         }"
-     x-resize="resize()"
-     x-init="resize()"
+     x-resize="resize"
+     x-init="resize"
      x-on:mousemove="onDrag"
      x-on:mouseup="stopDrag"
+     x-on:selectstart="selectStart"
 >
 
     <div x-ref="first" class="overflow-y-auto flex flex-col" :style="'height: ' + height1 + 'px'">
@@ -57,7 +60,6 @@
             <div class="border-y border-gray-200 h-1"></div>
         </div>
     </div>
-
     <div x-ref="second" class="overflow-y-auto flex flex-col" :style="'height: ' + height2 + 'px'">
         {{ $second }}
     </div>
