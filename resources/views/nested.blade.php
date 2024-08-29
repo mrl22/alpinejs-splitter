@@ -10,22 +10,22 @@
                 <x-slot name="first">
 
                     <x-splitter-h>
-                        <x-slot name="first">
+                        <x-slot name="first" class="bg-red-100">
 
-                            <x-lorem-ipsum />
+                            <x-lorem-ipsum number="1" />
 
                         </x-slot>
-                        <x-slot name="second">
+                        <x-slot name="second" class="bg-blue-100">
 
-                            <x-lorem-ipsum />
+                            <x-lorem-ipsum number="2" />
 
                         </x-slot>
                     </x-splitter-h>
 
                 </x-slot>
-                <x-slot name="second">
+                <x-slot name="second" class="bg-green-100">
 
-                    <x-lorem-ipsum />
+                    <x-lorem-ipsum number="3" />
 
                 </x-slot>
             </x-splitter-v>

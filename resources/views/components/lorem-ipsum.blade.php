@@ -1,5 +1,5 @@
 <div class="p-5 min-w-[400px]">
-    <h1 class="text-3xl font-semibold mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <h1 class="text-3xl font-semibold mb-3">{{ $number ?? '' }}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 
     <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras massa massa, fringilla vitae quam eu, pulvinar tempus
     velit. Suspendisse sit amet urna sem. Cras sed nisi sit amet mauris interdum venenatis. Nam auctor suscipit
